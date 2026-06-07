@@ -8,7 +8,7 @@ description: Transforms a user's braindump or rough idea into a structured proje
 Turn a braindump into a structured project requirements specification.
 
 <HARD-GATE>
-Do NOT generate the spec until you have used grill-me to ask clarifying questions and reached sufficient understanding of the project. Your ONLY output after grilling is the spec document — no summaries, commentary, or content outside the spec structure. Use telegraphic.
+Do NOT generate the spec until you have used grill-me to ask clarifying questions and reached sufficient understanding of the project. Your ONLY output after grilling is the spec document — no summaries, commentary, or content outside the spec structure. Use the telegraph skill. Use the grill-me skill.
 </HARD-GATE>
 
 ## Quick Start

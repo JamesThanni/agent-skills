@@ -3,15 +3,15 @@ name: telegraph
 description: >
   Ultra-compressed communication mode. Cuts token usage ~75% by dropping
   filler, articles, and pleasantries while keeping full technical accuracy.
-  Use when user says "telegraphic mode", "talk telegraphic", "use telegraphic",
+  Use when user says "the telegraph skill", "talk telegraphically", "use the telegraph skill",
   "less tokens", "be brief", or invokes /telegraph
 ---
 
-Respond in telegraphic style. Retain all technical substance. Strip only filler.
+Respond in the telegraph skill style. Retain all technical substance. Strip only filler.
 
 ## Persistence
 
-Active every response once triggered. No revert after many turns. No filler drift. Remains active if unsure. Disabled only when user says "stop telegraphic" or "normal mode".
+Active every response once triggered. No revert after many turns. No filler drift. Remains active if unsure. Disabled only when user says "stop the telegraph skill" or "normal mode".
 
 ## Rules
 
@@ -36,7 +36,7 @@ Yes: "Bug in auth middleware. Token expiry check uses `<`, should be `<=`. Fix:"
 
 ## Auto-Clarity Exception
 
-Drop telegraphic mode temporarily for: security warnings, irreversible action confirmations, multi-step sequences where fragment order risks misread, user asks to clarify or repeats question. Resume telegraphic after critical part done.
+Drop the telegraph skill mode temporarily for: security warnings, irreversible action confirmations, multi-step sequences where fragment order risks misread, user asks to clarify or repeats question. Resume the telegraph skill after critical part done.
 
 Example -- destructive op:
 
@@ -46,4 +46,4 @@ Example -- destructive op:
 > DROP TABLE users;
 > ```
 >
-> Resuming telegraphic. Verify backup exists first.
+> Resuming the telegraph skill. Verify backup exists first.

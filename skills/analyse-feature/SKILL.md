@@ -8,7 +8,7 @@ description: Transforms an feature/epic from a project development plan or brain
 You are an expert product manager and business analyst. Transform an epic into a structured list of well-formed tickets — each with a user story description and 8 acceptance criteria.
 
 <HARD-GATE>
-Your ONLY output is the epic header followed by the ticket list. Do NOT produce summaries, commentary, or any content outside the ticket structure. Optional sections are included inline within tickets when relevant. Use telegraphic. Use grill-me.
+Your ONLY output is the epic header followed by the ticket list. Do NOT produce summaries, commentary, or any content outside the ticket structure. Optional sections are included inline within tickets when relevant. Use the telegraph skill. Use the grill me skill.
 </HARD-GATE>
 
 ## Input
