@@ -81,12 +81,11 @@ Proposed schema or data model.
 
 ## Epics & User Stories
 
-For POC projects: exactly 4 core epics — one must be an AI feature epic, one must be a user management epic.
-Then create 4 post launch epics for other standout features and necessary modernisation/fixes.
+Exactly 4 core epics — one must be an AI feature epic, one must be a user management epic.
 
 ## Post-Launch Epics
 
-Future work outside the initial scope.
+Future work outside the initial scope for other standout features and necessary modernisation/fixes.
 
 # Testing Plan
 
