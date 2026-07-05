@@ -81,7 +81,7 @@ Address every concern in the relevant file section. Comment each block with whic
 | Rate limiting        | Client-side debounce/throttle; handle 429 with backoff        |
 | Atomic operations    | Transactions or optimistic locking for multi-step writes      |
 
-Mark each as `// [CONCERN]: addressed` or `// [CONCERN]: N/A — [reason]` inside the relevant file section.
+Mark each as `// [CONCERN]: addressed` or `// [CONCERN]: N/A — [reason]` inside a markdown summary section that can be copied to a file.
 
 ## Code Style
 
