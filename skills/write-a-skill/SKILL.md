@@ -8,6 +8,7 @@ description: Create new agent skills with proper structure, progressive disclosu
 <HARD-GATE>
 - Use the telegraph skill to reduce token usage when speaking.
 <HARD-GATE>
+
 ## Process
 
 1. **Gather requirements** - ask user about:
