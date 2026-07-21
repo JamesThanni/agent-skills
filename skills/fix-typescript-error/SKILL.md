@@ -1,5 +1,5 @@
 ---
-name: fix-typescript-errors
+name: fix-typescript-error
 description: >
   Debug and explain TypeScript errors step by step in a way that teaches as it fixes.
   Use this skill whenever a user shares a TypeScript error, compiler diagnostic, or type
@@ -13,7 +13,7 @@ description: >
 
 # Fix TypeScript Errors
 
-This skill guides clear, educational debugging of TypeScript errors. The goal is to fix the issue *and* help the user understand what went wrong — especially the underlying type system concept — so they can recognise it next time.
+This skill guides clear, educational debugging of TypeScript errors. The goal is to fix the issue _and_ help the user understand what went wrong — especially the underlying type system concept — so they can recognise it next time.
 
 ## What the user provides
 
@@ -30,19 +30,25 @@ If code is missing from the conversation, check the workspace before asking the 
 Always follow this exact structure. Keep each step brief but clear — one to three sentences per step is usually right. The user should be able to learn from the explanation, not just copy-paste the fix.
 
 ### Step 1 — Identify the error type
+
 Name the error code and category (e.g. `TS2345 — Argument of type mismatch`) and explain in one sentence what that class of error means in TypeScript's type system.
 
 ### Step 2 — Pinpoint the cause
-Point to the specific expression or declaration that triggered it. Explain *why* it fails — what TypeScript inferred or expected versus what it actually received.
+
+Point to the specific expression or declaration that triggered it. Explain _why_ it fails — what TypeScript inferred or expected versus what it actually received.
 
 ### Step 3 — Show the fix
+
 Present the corrected code in a code block. If the change is small, show only the relevant lines with enough surrounding context to locate them. If the change is larger (e.g. an interface refactor), show the full relevant block. Where multiple valid fixes exist, show the most idiomatic one first and briefly mention the alternatives.
 
 ### Step 4 — Explain why the fix works
+
 In one to two sentences, explain the mechanism: what does the corrected code do differently, and why does it satisfy the TypeScript compiler?
 
 ### Summary
+
 End with a short bullet-point summary (no tables) covering:
+
 - What the root cause was
 - What the fix does
 - Any general TypeScript principle worth remembering (e.g. "use a type guard before narrowing a union", "`unknown` requires explicit narrowing before use", "optional chaining doesn't narrow the type on its own")
@@ -85,7 +91,7 @@ Use these as a mental checklist when diagnosing:
 
 **Check `tsconfig.json` for strictness flags.** Many errors only appear with `strict`, `strictNullChecks`, `noImplicitAny`, or `exactOptionalPropertyTypes` enabled. If the error seems surprising, note which flag is responsible.
 
-**Distinguish type-level from value-level fixes.** Some errors are best fixed by correcting the *type annotation* (the type was wrong), others by correcting the *value* (the runtime data was wrong). Be clear about which kind of fix you're applying.
+**Distinguish type-level from value-level fixes.** Some errors are best fixed by correcting the _type annotation_ (the type was wrong), others by correcting the _value_ (the runtime data was wrong). Be clear about which kind of fix you're applying.
 
 **Generics errors.** When a generic type parameter is the cause, show what TypeScript inferred (`T = string`) versus what was needed, then explain how to constrain or explicitly pass the type argument.
 
@@ -94,9 +100,10 @@ Use these as a mental checklist when diagnosing:
 ## Handling incomplete information
 
 If the user gives an error but no code:
+
 1. Check the workspace for relevant `.ts` / `.tsx` files before asking.
 2. If no code is found, ask for the minimal snippet that reproduces the error — ideally including any relevant type definitions or interfaces.
 
-If the error originates inside `node_modules` or a `.d.ts` file, focus on the *call site in user-owned code* — that's almost always where the real mistake is.
+If the error originates inside `node_modules` or a `.d.ts` file, focus on the _call site in user-owned code_ — that's almost always where the real mistake is.
 
 If the error is environment-related (missing `@types` package, wrong `moduleResolution`, outdated TypeScript version), state that clearly and give the exact command or config change needed (e.g. `npm install --save-dev @types/node` or `"moduleResolution": "bundler"` in `tsconfig.json`).

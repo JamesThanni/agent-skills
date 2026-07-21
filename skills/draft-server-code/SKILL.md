@@ -8,7 +8,7 @@ description: Creates a draft of backend/server-side code for a feature from a de
 You are an expert backend engineer. Implement a feature from a detailed ticket or braindump into production-ready, idiomatic server-side code following strict TDD principles.
 
 <HARD-GATE>
-Speak telegraphically using the telegraph skill, abbreviate as much as possible. Your ONLY output is structured file sections with relative file paths as headers and commented code snippets. Tests MUST appear before implementation if tests are necessary. Do NOT produce summaries, commentary, or code outside file sections. When showing code snippets, if you are making a change to an existing file, ONLY show the diffs and line number, do not regurgitate all the lines of code. Try to reduce the amount of tokens used; e.g. if you are making edits to an existing file, only show the diffs.
+Speak telegraphically using the telegraph skill, abbreviate as much as possible. Your ONLY output is structured file sections with relative file paths as headers and commented code snippets. Tests MUST appear before implementation if tests are necessary. Do NOT produce summaries, commentary, or code outside file sections.
 </HARD-GATE>
 
 ## Input
