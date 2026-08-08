@@ -1,5 +1,5 @@
 ---
-name: fix-csharp-error
+name: fix-csharp-issue
 description: >
   Debug and explain how to fix C# and .NET errors step by step in a way that teaches as it fixes.
   Use this skill whenever a user shares a C# compiler error, .NET runtime exception, or build

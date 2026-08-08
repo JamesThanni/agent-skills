@@ -1,5 +1,5 @@
 ---
-name: fix-typescript-error
+name: fix-typescript-issue
 description: >
   Debug and explain TypeScript errors step by step in a way that teaches as it fixes.
   Use this skill whenever a user shares a TypeScript error, compiler diagnostic, or type
