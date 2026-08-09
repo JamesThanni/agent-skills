@@ -99,7 +99,10 @@ Follow best practices for the library used. If no library is specified follow FA
 
 ## Python Tools
 
-[...fill in here]
+- **`uv run` CLI** is the source of truth.
+- **`uv run ruff format`** before commit. Should be enforced in CI.
+- **`uv run pytest ./server/tests/*`** with `--collect:"XPlat Code Coverage"` for coverage runs.
+- **`uv tree --outdated`** (global tool) to surface stale packages periodically.
 
 ## Code Formatting
 

@@ -115,14 +115,11 @@ tests/
 ## .NET Tools
 
 - **`dotnet` CLI** is the source of truth. IDE shortcuts must produce the same result.
-- **`dotnet format`** before commit. Enforced in CI.
+- **`dotnet format`** before commit. Should be enforced in CI.
 - **`dotnet test`** with `--collect:"XPlat Code Coverage"` for coverage runs.
 - **`dotnet ef migrations add <Name>`** — review the generated file before committing. Never edit applied migrations; add a new one.
 - **`dotnet user-secrets`** for local secrets. Never commit `appsettings.Development.json` with real values.
 - **`dotnet outdated`** (global tool) to surface stale packages periodically.
-- **Roslyn analysers enabled** with `TreatWarningsAsErrors=true` in CI builds.
-- **`Testcontainers`** for integration tests requiring real Postgres/Mongo/Redis. No shared DBs across tests.
-- **`BenchmarkDotNet`** for any performance claim. No hand-rolled stopwatch micro-benchmarks in PRs.
 
 ## Code Formatting
 
