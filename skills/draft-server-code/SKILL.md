@@ -35,7 +35,16 @@ Follow this strict order — never reverse it:
 
 ## Output Format
 
-Each file section uses the relative file path as a markdown H3 header, followed by a commented code block.
+Output your answer in hierarchical markdown with sections for:
+
+- Overview
+- File Structure
+- Implementation Steps
+- Key Technical Details
+- Addressed Concerns
+- Unresolved Questions
+
+Each file section in the implementation should have a markdown header that is the file or classname, a subheading for the relative file path, followed by a commented code block and bulleted summary of the changes after the code block.
 
 ````
 ### `tests/test_feature.py`
