@@ -10,7 +10,7 @@ Reviews a branch's tip commit using live library/language docs from Context7
 
 ## Requirements
 
-- `CONTEXT7_API_KEY` env var must be set. Find it in the root .env file. If missing, tell the user and stop.
+- `CONTEXT7_API_KEY` env var must be set. Find it in the root .env.local file. If missing, tell the user and stop.
 - Target must be a git repo with the branch present locally (fetch if needed).
 
 ## Quick start
