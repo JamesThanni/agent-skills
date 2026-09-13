@@ -25,6 +25,8 @@ This file provides context and guidance for AI assistants working in this codeba
 - Build test environments for hard-to-validate components
 - Keep core logic clean; push implementation details to the edges
 - Balance file organization with simplicity for project scale
+- Follow the Keep-It-Super-Simple software design principle
+- Ask questions if you are unsure
 
 ### CI / Error Resolution
 
