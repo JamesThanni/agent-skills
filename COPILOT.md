@@ -84,7 +84,7 @@ This file provides context and guidance for AI assistants working in this codeba
 
 ### Testing
 
-- `uv run pytest`; async tests use `anyio`, not `asyncio`
+- `uv run pytest`; async tests use `asyncio`
 - New features and bug fixes both require tests (regression tests for fixes)
 
 ### Code Style

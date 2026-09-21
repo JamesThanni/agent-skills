@@ -2,7 +2,12 @@
 
 This file provides context and guidance for AI assistants working in this codebase.
 
-## General Conventions (TypeScript and Python)
+## Hard Gate - IMPORTANT VITAL RULES
+
+- Do not read anything in the node_modules/, .expo, or .venv/ folders, pycache.
+- In your own words, without jargon, narrate each step in the order it actually happens, and bold inline anything in the current conversation that has drifted from my most recently stated intent.
+
+## Shared Conventions (TypeScript and Python)
 
 ### Development Philosophy
 
@@ -25,8 +30,8 @@ This file provides context and guidance for AI assistants working in this codeba
 - Build test environments for hard-to-validate components
 - Keep core logic clean; push implementation details to the edges
 - Balance file organization with simplicity for project scale
-- Follow the Keep-It-Super-Simple software design principle
-- Ask questions if you are unsure
+- Follow Clean Code and Keep-It-Super-Simple software design principles
+- Ask questions if you are unsure about anything
 
 ### CI / Error Resolution
 
@@ -51,7 +56,7 @@ This file provides context and guidance for AI assistants working in this codeba
 - Functions focused and small; follow existing patterns; 100 char line length
 - All commonly reused colours should be stored in (mobile/web)/global/constants/theme.ts, extract and refactor any you come across to follow this pattern
 - All commonly reused spacing should be stored in (mobile/web)/global/constants/spacing.ts, extract and refactor any you come across to follow this pattern
-- All commonly reused font styles should be stored in (mobile/web)/global/constants/spacing.ts, extract and refactor any you come across to follow this pattern
+- All commonly reused font styles should be stored in (mobile/web)/global/constants/typography.ts, extract and refactor any you come across to follow this pattern
 
 ### Testing
 
@@ -84,7 +89,7 @@ This file provides context and guidance for AI assistants working in this codeba
 
 ### Testing
 
-- `uv run pytest`; async tests use `anyio`, not `asyncio`
+- `uv run pytest`; async tests use `asyncio`
 - New features and bug fixes both require tests (regression tests for fixes)
 
 ### Code Style
