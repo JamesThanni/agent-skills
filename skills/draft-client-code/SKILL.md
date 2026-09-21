@@ -24,6 +24,14 @@ Extract intent if the input is ambiguous. Ask at most 2 clarifying questions bef
 
 Before drafting components, use the `context7` MCP tool to pull current, version-accurate docs/APIs for the target framework and any UI libraries in play (e.g. hooks, component props, lifecycle APIs). Prefer context7 output over memorised API shapes — frontend framework APIs shift often between versions. If context7 is unavailable, note the assumption inline as a comment.
 
+## TDD Workflow
+
+Implement only unit tests. There should be a maximum of four tests per file only covering the most important user flows. Follow this strict order — never reverse it:
+
+1. **Red** — write failing tests covering all acceptance criteria
+2. **Green** — write minimal implementation to pass the tests
+3. **Refactor** — clean up while keeping tests green
+
 ## Output Format
 
 Output your answer in hierarchical markdown with sections for:
@@ -49,7 +57,15 @@ export function FeatureName() {
 ```
 ````
 
-## Concerns and Details Checklist
+## Implementation Report
+
+Respond at the end of the conversation with an implementation report. It should be formatted in markdown containing each concern as `[CONCERN]: addressed` or `[CONCERN]: N/A — [reason]` inside a `concerns` section and a `changes` section with every new/edited file, report the details of the added/modified file in the format:
+
+```
+**[ClassName / FunctionName]:**
+- Implements - [feature name]
+- Depends on - [dependencies list]
+```
 
 Address every concern in the relevant file section. Comment each block with which concern it targets.
 
@@ -62,14 +78,6 @@ Address every concern in the relevant file section. Comment each block with whic
 - **Security** — XSS-safe rendering, sanitised inputs, no secrets in client bundle
 - **Internationalisation** — Externalise UI strings; locale-aware date/number/currency display
 - **API/network resilience** — Loading/retry/timeout handling, debouncing, race-condition-safe fetches
-
-Respond at the end of the conversation with an implementation report. It should be formatted in markdown containing each concern as `[CONCERN]: addressed` or `[CONCERN]: N/A — [reason]` inside a `concerns` section and a `changes` section with every new/edited file, report the details of the added/modified file in the format:
-
-```
-**[ClassName / FunctionName]:**
-- Implements - [feature name]
-- Depends on - [dependencies list]
-```
 
 ## Code Style
 
