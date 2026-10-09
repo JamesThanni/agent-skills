@@ -26,7 +26,7 @@ Before drafting components, use the `context7` MCP tool to pull current, version
 
 ## TDD Workflow
 
-Implement only unit tests. There should be a maximum of four tests per file only covering the most important user flows. Follow this strict order — never reverse it:
+Implement only unit tests. There should be a maximum of four tests per feature only covering the most important user flows, where new logic is added to an existing tests rather than creating 100s of niche tests. It should be written in features/feature_name/api/featureNameService.test.ts. Follow this strict order — never reverse it:
 
 1. **Red** — write failing tests covering all acceptance criteria
 2. **Green** — write minimal implementation to pass the tests
