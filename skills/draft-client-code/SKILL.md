@@ -24,6 +24,11 @@ Extract intent if the input is ambiguous. Ask at most 2 clarifying questions bef
 
 Before drafting components, use the `context7` MCP tool to pull current, version-accurate docs/APIs for the target framework and any UI libraries in play (e.g. hooks, component props, lifecycle APIs). Prefer context7 output over memorised API shapes — frontend framework APIs shift often between versions. If context7 is unavailable, note the assumption inline as a comment.
 
+## Use a UX design system
+
+Before drafting styling for the components, use the design-system.md in this skills ux/ folder to ensure consistency of colours, spacing, typography, etc across all the UI. The developer may provide overriding accent colours; if so  use them, if not use the UX design systems colours as a base.
+
+
 ## TDD Workflow
 
 Implement only unit tests. There should be a maximum of four tests per feature only covering the most important user flows, where new logic is added to an existing tests rather than creating 100s of niche tests. It should be written in features/feature_name/api/featureNameService.test.ts. Follow this strict order — never reverse it:
